@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    var arrs = ["AAA", "BBB"]
     var body: some View {
+
         NavigationView {
-            Text("Home")
+            VStack {
+                Text("Home")
+                List {
+                    ForEach(arrs.indices, id: \.self) { index in
+                        NavigationLink(destination: TimerView()) {
+                            Text(arrs[index])
+                        }
+                    }
+                }
+            }
                 .navigationTitle("Home")
                 .toolbar {
-                    NavigationLink(destination: AddTimerView()) {
-                        Image(systemName: "plus.circle.fill")
-                    }
+                   
                 }
         }
     }
@@ -24,6 +33,19 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+
+struct TimerView: View {
+    var body: some View {
+        Text("Time")
+            .navigationTitle("Time")
+            .toolbar {
+                NavigationLink(destination: AddTimerView()) {
+                    Image(systemName: "plus.circle.fill")
+                }
+            }
     }
 }
 
@@ -36,5 +58,6 @@ struct AddTimerView: View {
             Text("")
         }
         .datePickerStyle(.wheel)
+        .navigationTitle("Add Timer")
     }
 }

@@ -11,6 +11,7 @@
 		CD527AF327EF19F2004EDC58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD527AF227EF19F2004EDC58 /* ContentView.swift */; };
 		CD527AF527EF19F3004EDC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD527AF427EF19F3004EDC58 /* Assets.xcassets */; };
 		CD527AF827EF19F3004EDC58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD527AF727EF19F3004EDC58 /* Preview Assets.xcassets */; };
+		CD527B0127EF2281004EDC58 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD527B0027EF2281004EDC58 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CD527AF227EF19F2004EDC58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD527AF427EF19F3004EDC58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD527AF727EF19F3004EDC58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD527B0027EF2281004EDC58 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				CD527AF027EF19F2004EDC58 /* DatePickerDemoApp.swift */,
+				CD527B0027EF2281004EDC58 /* MenuView.swift */,
 				CD527AF227EF19F2004EDC58 /* ContentView.swift */,
 				CD527AF427EF19F3004EDC58 /* Assets.xcassets */,
 				CD527AF627EF19F3004EDC58 /* Preview Content */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD527AF327EF19F2004EDC58 /* ContentView.swift in Sources */,
+				CD527B0127EF2281004EDC58 /* MenuView.swift in Sources */,
 				CD527AF127EF19F2004EDC58 /* DatePickerDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
